@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Heebo", sans-serif;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unified_blog_wrapper {
+  width: 70%;
+  height: 100vh;
+}
+
+.unified {
+  font-size: 0.75rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+.unified_navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.unified_navbar .btn_subscribe {
+  background-color: orange;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+}
+.unified_navbar .btn_subscribe:hover {
+  cursor: pointer;
+  background-color: rgb(114, 32, 2);
+  color: white;
+}
+.unified_navbar a {
+  text-decoration: none;
+  color: grey;
+}
+.unified_navbar a:hover {
+  border-bottom: 3px solid rgb(114, 32, 2);
+  transition: 0.6;
+}
+.hamburger_menu {
+  display: none;
+}
+/* ===========Weekly Newsletter: Tweets for Higher Engagements=========================== */
+
+.weekly_newsletter {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  gap: 2rem;
+  padding: 1rem 0rem;
+}
+
+.sub_weekly_newsletter h1 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+}
+.sub_weekly_newsletter p {
+  font-size: 0.75rem;
+  padding: 1rem 0rem;
+  color: grey;
+  width: 80%;
+}
+.weekly_newsletter > img {
+  display: block;
+  width: 100%;
+  box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.75);
+  border: 0.5px solid white;
+  border-radius: 3px;
+}
+.jessica-andrews img {
+  width: 7%;
+  border-radius: 50%;
+  border: 1px solid rgb(166, 166, 166);
+  padding: 3px;
+}
+
+.jessica-andrews,
+.user_portfolio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile_name h2,
+.user_portfolio h2 {
+  font-size: 0.65rem;
+  margin-bottom: 0;
+}
+.profile_name p,
+.user_portfolio p {
+  font-size: 0.55rem;
+  color: grey;
+  padding: 0;
+  width: 100%;
+}
+
+.user_portfolio img {
+  border-radius: 50%;
+  border: 1px solid rgb(166, 166, 166);
+  padding: 3px;
+}
+
+/* =======================7 tips for organic Traffic================= */
+
+.middle_articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem 0rem;
+}
+
+.organic_traffic h3 {
+  text-transform: capitalize;
+  line-height: 1.5rem;
+  padding: 0.5rem 0rem;
+  margin-top: 1rem;
+  width: 80%;
+  font-weight: 300;
+}
+.organic_traffic > img {
+  display: block;
+  width: 100%;
+  box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.75);
+  border: 0.5px solid white;
+  border-radius: 3px;
+}
+
+.organic_traffic p {
+  font-size: 0.75rem;
+  color: grey;
+  padding-bottom: 0.5rem;
+  width: 80%;
+}
+.user_portfolio img {
+  width: 15%;
+}
+.user_portfolio p {
+  padding: 0rem;
+  width: 100%;
+}
+/* =========================Footer======================== */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem 0rem;
+  font-size: 0.65rem;
+  color: grey;
+}
+
+/* ==================Media Query================= */
+
+@media only screen and (max-width: 768px) {
+  .unified {
+    width: 90%;
+  }
+  .unified_navbar {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+  .unified_blog_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .weekly_newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  .middle_articles {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+    align-items: flex-start;
+  }
+}
